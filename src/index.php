@@ -25,7 +25,7 @@
 <div class="container">
   <div class="rounded-div">
     <h2 class="mb-4 text-center">Phone Number Generator</h2>
-    <form id="phoneForm" action="" method="post">
+    <form id="phoneForm" action="generatenumbers.php" method="post">
       <div class="mb-3">
         <label for="country_code" class="form-label">Country Code:</label>
         <input type="text" class="form-control" id="country_code" name="country_code" required>
@@ -40,6 +40,7 @@
       </div>
       <div class="text-center">
         <button type="button" id="generateButton" class="btn btn-primary">Generate Numbers</button>
+        <button type="button" id="downloadButton" class="btn btn-success d-none">Download Numbers</button>
       </div>
     </form>
     <div id="phoneNumbers" class="mt-4"></div>
@@ -50,6 +51,7 @@
   <p>All Rights Reserved. Created by Tony</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/scripts.js"></script>
 </body>
 </html>

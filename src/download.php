@@ -14,6 +14,7 @@ foreach ($phoneNumbers as $key => $number) {
     $sheet->setCellValue('A' . ($key + 2), $number);
 }
 
+$t = time();
 $rand = "PN" . rand(1000, 9999) . "_";
 $filename = $rand . date("Y-m-d", $t) . ".xlsx";
 
